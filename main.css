@@ -4,9 +4,15 @@
 }
 
 body {
-    background-color: rgb(230, 227, 227);
     padding: 20px 10px;
+    font-family: 'Myriad Pro Light';
 }
+
+body .price,
+body>nav>h2 {
+    font-family: 'Myriad Pro Bold';
+}
+
 
 body>section>aside {
     width: 100%;
@@ -29,7 +35,7 @@ body>section>aside .img_block {
 }
 
 body>section>aside .text-ad {
-    padding-left: 85px;
+    padding: 0 4px 0 85px;
     height: 100%;
     width: 100%;
 }
@@ -40,9 +46,32 @@ body>section>aside .img_block img {
 
 body>section>aside .time-and-number {
     position: relative;
-    top: 25%;
+    display: flex;
+    justify-content: space-between;
+    top: 14px;
 }
 
-body>section>aside .time-and-number .time{
+body>section>aside .time-and-number .time,
+body>section>aside .time-and-number .number {
     color: gray;
+}
+
+
+@font-face {
+    font-family: 'Myriad Pro Light';
+    src: url('fonts/MyriadPro-Light/MyriadPro-Light.eot');
+    src: url('fonts/MyriadPro-Light/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MyriadPro-Light/MyriadPro-Light.woff') format('woff'),
+    url('fonts/MyriadPro-Light/MyriadPro-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro Bold';
+    src: url('fonts/MyriadPro-Bold/MyriadPro-Bold.eot');
+    src: url('fonts/MyriadPro-Bold/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MyriadPro-Bold/MyriadPro-Bold.woff') format('woff'),
+    url('fonts/MyriadPro-Bold/MyriadPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
