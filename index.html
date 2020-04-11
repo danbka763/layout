@@ -22,15 +22,13 @@
   <script src="main.js"></script>
   <script>
 	loadNewCard(ot);
-	ot += 2;
 	  
 	var os = new OnScreen();
 
 	os.on('enter', '.onScreen', 
 	() => {
-		console.log("it's work")
-		loadNewCard(ot)
-		ot += 2;
+		console.log("it's work! ot:", ot);
+		loadNewCard(ot);
 	})
   </script>
 </body>

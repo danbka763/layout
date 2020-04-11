@@ -8,7 +8,7 @@ function loadNewCard(ot) {
     type: "POST",
     url: "https://tochka-market.space/api/getzayavki.php",
     async: false,
-    data: '&ot=' + ot + '&do=' + 2,
+    data: '&ot=' + ot + '&do=' + 10,
     cache: false,
     success: function(data) { return data }
   }).responseText);
@@ -28,5 +28,7 @@ function loadNewCard(ot) {
       </aside>
       `
   }
+
+  ot += 10;
 
 }
