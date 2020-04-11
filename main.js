@@ -1,13 +1,23 @@
 let aside = document.getElementById('cards')
 
 let request = JSON.parse($.ajax({
-    type: "POST",
-    url: "https://tochka-market.space/api/getzayavki.php",
-    async: false,
-    data: '&ot=' + 0 + '&do=' + 10,
-    cache: false,
-    success: function(data) { return data }
-  }).responseText);
+  type: "POST",
+  url: "https://tochka-market.space/api/getzayavki.php",
+  async: false,
+  data: '&ot=' + 0 + '&do=' + 10,
+  cache: false,
+  success: function(data) { return data }
+}).responseText);
+
+console.log({request: request,
+             ajax: $.ajax({
+              type: "POST",
+              url: "https://tochka-market.space/api/getzayavki.php",
+              async: false,
+              data: '&ot=' + 0 + '&do=' + 10,
+              cache: false,
+              success: function(data) { return data }
+            })})
 
 for (let i = 0; i < request.length; i++) {
   aside.innerHTML += `
