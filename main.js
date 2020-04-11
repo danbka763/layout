@@ -1,6 +1,6 @@
 let aside = document.getElementById('cards')
 
-let ot = 0;
+var ot = 0;
 
 function loadNewCard(ot) {
   
@@ -28,7 +28,5 @@ function loadNewCard(ot) {
       </aside>
       `
   }
-
-  ot += 10;
 
 }
