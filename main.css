@@ -17,12 +17,6 @@ body>section {
     display: grid;
     justify-items: center;
     grid-column-gap: 10px;
-    /* grid-template-columns: 100%; */
-}
-
-@media screen and (min-width: 720px) {
-    body>section { grid-template-columns: 49% 50%; }
-    body>section>aside { width: 100%; }
 }
 
 body>section>aside {
@@ -34,6 +28,11 @@ body>section>aside {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.15);
+}
+
+@media screen and (min-width: 720px) {
+    body>section { grid-template-columns: 49% 50%; }
+    body>section>aside { width: 100%; }
 }
 
 body>section>aside .img_block {
