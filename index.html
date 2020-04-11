@@ -17,21 +17,22 @@
 
   <section id="cards"></section>
 
-  <div class="onScreen"></div>
+  <div class="onScreen" id="OS"></div>
 
-  <script src="main.js"></script>
-  <script>
+  <script src="main.js" id="scriptAJAX"></script>
+
+  <script id="gettingCards">
 	loadNewCard(ot);
 	ot += 10;
 	  
 	var os = new OnScreen();
 
 	os.on('enter', '.onScreen', 
-	() => {
-		console.log("it's work! ot:", ot);
-		loadNewCard(ot);
-		ot += 10;
-	})
+	  () => {
+	  	loadNewCard(ot);
+	  	ot += 10;
+	  })
   </script>
+
 </body>
 </html>

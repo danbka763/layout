@@ -50,6 +50,13 @@ body>section>aside .text-ad {
     width: 100%;
 }
 
+body>section>aside .text-ad .name {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+}
+
 body>section>aside .img_block img {
     height: 80px;
 }
