@@ -73,6 +73,11 @@ body>section>aside .time-and-number .number {
     color: gray;
 }
 
+body>.onScreen {
+    position: relative;
+    top: -150px;
+}
+
 
 @font-face {
     font-family: 'Myriad Pro Light';
